@@ -29,7 +29,7 @@ int main() {
     // list.push_back(2);
     // list.push_back(6);
 
-    QuickSort q;
+    BubbleSort q;
     list = q.sort(list);
 
     RecursiveBinarySearch p;

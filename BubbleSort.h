@@ -5,12 +5,8 @@ using namespace std;
 
 class BubbleSort : public Sort {
 public:
-    vector<int> sort(vector<int> list);
-    
-
-
-private:
-    void bubbleSort(vector<int>& array);
+    BubbleSort();
+    std::vector<int> sort(std::vector<int> list);
 };
 
 

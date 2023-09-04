@@ -2,7 +2,7 @@
 using namespace std;
 #include <vector>
 #include "BubbleSort.h"
-#include "sort.h"
+#include "Sort.h"
 
  vector<int>BubbleSort::sort(vector<int> list){
     bubbleSort(list);

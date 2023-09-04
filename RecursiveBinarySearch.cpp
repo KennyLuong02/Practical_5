@@ -4,7 +4,7 @@
 
 bool RecursiveBinarySearch::search(std::vector<int> vectorInput , int searchInput) {
     return this->recursiveSearch(vectorInput , searchInput , 0 , vectorInput.size() - 1);
-};
+}
 
 bool RecursiveBinarySearch::recursiveSearch (std::vector<int> vectorInput , int searchInput , int boundS , int boundL) {
     int midEle = (boundL + boundS) / 2;
@@ -20,7 +20,8 @@ bool RecursiveBinarySearch::recursiveSearch (std::vector<int> vectorInput , int 
         } else if(vectorInput[midEle] < searchInput) {
             return recursiveSearch(vectorInput , searchInput , midEle , boundL);
         }
-    };
-};
+        return false;
+    }
+}
 
 

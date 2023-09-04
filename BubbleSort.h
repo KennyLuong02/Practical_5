@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 #include <vector>
-#include "sort.h"
+#include "Sort.h"
 
 class BubbleSort : public Sort {
 public:

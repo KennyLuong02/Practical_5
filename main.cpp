@@ -41,7 +41,11 @@ int main() {
 
     // cout << endl;
 
-    cout << a << " " << endl;
+    if (a == 0) {
+        cout << "false " << endl;
+    } else {
+        cout << "true " << endl;
+    }
     for (int num : list) {
         std::cout << num << " ";
     }

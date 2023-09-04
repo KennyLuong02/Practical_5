@@ -8,6 +8,7 @@ class RecursiveBinarySearch {
         bool recursiveSearch(std::vector<int> vectorIn , int searchInput , int boundS , int boundL);
 
     public:
+        RecursiveBinarySearch();
         bool search(std::vector<int> vectorIn, int searchInput);
 };
 

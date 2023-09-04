@@ -1,6 +1,8 @@
 #include <iostream>
 #include "RecursiveBinarySearch.h"
 
+RecursiveBinarySearch::RecursiveBinarySearch() {
+}
 
 bool RecursiveBinarySearch::search(std::vector<int> vectorInput , int searchInput) {
     return this->recursiveSearch(vectorInput , searchInput , 0 , vectorInput.size() - 1);

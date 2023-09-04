@@ -1,11 +1,24 @@
 #include <iostream>
 #include <vector>
 #include "Sort.h"
+#include "BubbleSort.h"
 #include "QuickSort.h"
+#include "RecursiveBinarySearch.h"
 
 using namespace std;
 
 int main() {
+    std::vector<int> list;
+    int num;
+
+     while (std::cin >> num) {
+        list.push_back(num); // Add the integer to the vector
+    }
+
+    std::cin.clear();
+    // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
     // std::vector<int> list;
 
     // list.push_back(-3);
@@ -16,14 +29,24 @@ int main() {
     // list.push_back(2);
     // list.push_back(6);
 
-    // QuickSort q;
-    // list = q.sort(list);
+    QuickSort q;
+    list = q.sort(list);
+
+    RecursiveBinarySearch p;
+    bool a = p.search(list, 1);
 
     // for (int i = 0; i < 7; i++) {
     //     cout << list.at(i) << " ";
     // }
 
     // cout << endl;
+
+    cout << a << " " << endl;
+    for (int num : list) {
+        std::cout << num << " ";
+    }
+
+    cout << endl;
 
     return 0;
 

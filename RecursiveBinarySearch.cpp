@@ -8,7 +8,7 @@ bool RecursiveBinarySearch::search(std::vector<int> vectorInput , int searchInpu
 
 bool RecursiveBinarySearch::recursiveSearch (std::vector<int> vectorInput , int searchInput , int boundS , int boundL) {
     int midEle = (boundL + boundS) / 2;
-    std::cout << vectorInput[midEle] << std::endl;
+    // std::cout << vectorInput[midEle] << std::endl;
 
     if(vectorInput[midEle] == searchInput) {
         return true;
@@ -16,11 +16,12 @@ bool RecursiveBinarySearch::recursiveSearch (std::vector<int> vectorInput , int 
         return false;
     } else {
         if(vectorInput[midEle] > searchInput) {
-            return recursiveSearch(vectorInput , searchInput , midEle , boundS);
+            return recursiveSearch(vectorInput , searchInput , boundS , midEle--);
         } else if(vectorInput[midEle] < searchInput) {
-            return recursiveSearch(vectorInput , searchInput , midEle , boundL);
+            return recursiveSearch(vectorInput , searchInput , midEle++ , boundL);
+        } else {
+            return false;
         }
-        return false;
     }
 }
 
